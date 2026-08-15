@@ -1,0 +1,865 @@
+[
+  {
+    "id": "f4p_cellsplicenet_ablation",
+    "skill": "figures4papers",
+    "board": "formal_demo",
+    "short_name": "ablation · CellSpliceNet",
+    "caption": "正式 demo：CellSpliceNet / ablation。配套脚本 plot_ablation.py。复制代码+你的数据给 Agent 出图。",
+    "source": "figures4papers / CellSpliceNet",
+    "preview": "/static/skill-gallery/f4p_cellsplicenet_ablation.png",
+    "chart_type": "comparison_bar",
+    "style": {
+      "hide_xticks": true,
+      "annotate": true,
+      "ylabel": "Score"
+    },
+    "code_url": "/static/skill-gallery/code/f4p_cellsplicenet_ablation.py",
+    "code_path": "/home/produ/.codex/skills/nature-figure/assets/figures4papers/figure_CellSpliceNet/plot_ablation.py",
+    "has_code": true,
+    "code_name": "plot_ablation.py"
+  },
+  {
+    "id": "f4p_cellsplicenet_comparison",
+    "skill": "figures4papers",
+    "board": "formal_demo",
+    "short_name": "comparison · CellSpliceNet",
+    "caption": "正式 demo：CellSpliceNet / comparison。配套脚本 plot_comparison.py。复制代码+你的数据给 Agent 出图。",
+    "source": "figures4papers / CellSpliceNet",
+    "preview": "/static/skill-gallery/f4p_cellsplicenet_comparison.png",
+    "chart_type": "comparison_bar",
+    "style": {
+      "hide_xticks": true,
+      "annotate": true,
+      "ylabel": "Score"
+    },
+    "code_url": "/static/skill-gallery/code/f4p_cellsplicenet_comparison.py",
+    "code_path": "/home/produ/.codex/skills/nature-figure/assets/figures4papers/figure_CellSpliceNet/plot_comparison.py",
+    "has_code": true,
+    "code_name": "plot_comparison.py"
+  },
+  {
+    "id": "f4p_cflows_diffusion_swiss_roll",
+    "skill": "figures4papers",
+    "board": "formal_demo",
+    "short_name": "diffusion swiss roll · Cflows",
+    "caption": "正式 demo：Cflows / diffusion_swiss_roll。配套脚本 diffusion_swiss_roll.py。复制代码+你的数据给 Agent 出图。",
+    "source": "figures4papers / Cflows",
+    "preview": "/static/skill-gallery/f4p_cflows_diffusion_swiss_roll.png",
+    "chart_type": "multi_metric",
+    "style": {
+      "annotate": true
+    },
+    "code_url": "/static/skill-gallery/code/f4p_cflows_diffusion_swiss_roll.py",
+    "code_path": "/home/produ/.codex/skills/nature-figure/assets/figures4papers/figure_Cflows/diffusion_swiss_roll.py",
+    "has_code": true,
+    "code_name": "diffusion_swiss_roll.py"
+  },
+  {
+    "id": "f4p_cflows_fig2_comparison_generegulatory",
+    "skill": "figures4papers",
+    "board": "formal_demo",
+    "short_name": "fig2 comparison GeneRegulatory · Cflows",
+    "caption": "正式 demo：Cflows / fig2_comparison_GeneRegulatory。配套脚本 plot_comparison_GeneRegulatory.py。复制代码+你的数据给 Agent 出图。",
+    "source": "figures4papers / Cflows",
+    "preview": "/static/skill-gallery/f4p_cflows_fig2_comparison_generegulatory.png",
+    "chart_type": "comparison_bar",
+    "style": {
+      "hide_xticks": true,
+      "annotate": true,
+      "ylabel": "Score"
+    },
+    "code_url": "/static/skill-gallery/code/f4p_cflows_fig2_comparison_generegulatory.py",
+    "code_path": "/home/produ/.codex/skills/nature-figure/assets/figures4papers/figure_Cflows/plot_comparison_GeneRegulatory.py",
+    "has_code": true,
+    "code_name": "plot_comparison_GeneRegulatory.py"
+  },
+  {
+    "id": "f4p_cflows_fig2_comparison_trajectory",
+    "skill": "figures4papers",
+    "board": "formal_demo",
+    "short_name": "fig2 comparison Trajectory · Cflows",
+    "caption": "正式 demo：Cflows / fig2_comparison_Trajectory。配套脚本 plot_comparison_Trajectory.py。复制代码+你的数据给 Agent 出图。",
+    "source": "figures4papers / Cflows",
+    "preview": "/static/skill-gallery/f4p_cflows_fig2_comparison_trajectory.png",
+    "chart_type": "comparison_bar",
+    "style": {
+      "hide_xticks": true,
+      "annotate": true,
+      "ylabel": "Score"
+    },
+    "code_url": "/static/skill-gallery/code/f4p_cflows_fig2_comparison_trajectory.py",
+    "code_path": "/home/produ/.codex/skills/nature-figure/assets/figures4papers/figure_Cflows/plot_comparison_Trajectory.py",
+    "has_code": true,
+    "code_name": "plot_comparison_Trajectory.py"
+  },
+  {
+    "id": "f4p_cflows_figx_comparison_ablation",
+    "skill": "figures4papers",
+    "board": "formal_demo",
+    "short_name": "figX comparison Ablation · Cflows",
+    "caption": "正式 demo：Cflows / figX_comparison_Ablation。配套脚本 plot_comparison_Ablation.py。复制代码+你的数据给 Agent 出图。",
+    "source": "figures4papers / Cflows",
+    "preview": "/static/skill-gallery/f4p_cflows_figx_comparison_ablation.png",
+    "chart_type": "comparison_bar",
+    "style": {
+      "hide_xticks": true,
+      "annotate": true,
+      "ylabel": "Score"
+    },
+    "code_url": "/static/skill-gallery/code/f4p_cflows_figx_comparison_ablation.py",
+    "code_path": "/home/produ/.codex/skills/nature-figure/assets/figures4papers/figure_Cflows/plot_comparison_Ablation.py",
+    "has_code": true,
+    "code_name": "plot_comparison_Ablation.py"
+  },
+  {
+    "id": "f4p_dispersion_idea",
+    "skill": "figures4papers",
+    "board": "formal_demo",
+    "short_name": "idea · Dispersion",
+    "caption": "正式 demo：Dispersion / idea。配套脚本 plot_idea.py。复制代码+你的数据给 Agent 出图。",
+    "source": "figures4papers / Dispersion",
+    "preview": "/static/skill-gallery/f4p_dispersion_idea.png",
+    "chart_type": "multi_metric",
+    "style": {
+      "annotate": true
+    },
+    "code_url": "/static/skill-gallery/code/f4p_dispersion_idea.py",
+    "code_path": "/home/produ/.codex/skills/nature-figure/assets/figures4papers/figure_Dispersion/plot_idea.py",
+    "has_code": true,
+    "code_name": "plot_idea.py"
+  },
+  {
+    "id": "f4p_dispersion_illustration",
+    "skill": "figures4papers",
+    "board": "formal_demo",
+    "short_name": "illustration · Dispersion",
+    "caption": "正式 demo：Dispersion / illustration。配套脚本 plot_illustration.py。复制代码+你的数据给 Agent 出图。",
+    "source": "figures4papers / Dispersion",
+    "preview": "/static/skill-gallery/f4p_dispersion_illustration.png",
+    "chart_type": "multi_metric",
+    "style": {
+      "annotate": true
+    },
+    "code_url": "/static/skill-gallery/code/f4p_dispersion_illustration.py",
+    "code_path": "/home/produ/.codex/skills/nature-figure/assets/figures4papers/figure_Dispersion/plot_illustration.py",
+    "has_code": true,
+    "code_name": "plot_illustration.py"
+  },
+  {
+    "id": "f4p_fpgm_freq_prior",
+    "skill": "figures4papers",
+    "board": "formal_demo",
+    "short_name": "freq prior · FPGM",
+    "caption": "正式 demo：FPGM / freq_prior。配套脚本 plot_freq_prior.py。复制代码+你的数据给 Agent 出图。",
+    "source": "figures4papers / FPGM",
+    "preview": "/static/skill-gallery/f4p_fpgm_freq_prior.png",
+    "chart_type": "multi_metric",
+    "style": {
+      "annotate": true
+    },
+    "code_url": "/static/skill-gallery/code/f4p_fpgm_freq_prior.py",
+    "code_path": "/home/produ/.codex/skills/nature-figure/assets/figures4papers/figure_FPGM/plot_freq_prior.py",
+    "has_code": true,
+    "code_name": "plot_freq_prior.py"
+  },
+  {
+    "id": "f4p_immunostruct_bars_ablation_cancer",
+    "skill": "figures4papers",
+    "board": "formal_demo",
+    "short_name": "bars ablation Cancer · ImmunoStruct",
+    "caption": "正式 demo：ImmunoStruct / bars_ablation_Cancer。配套脚本 plot_bars.py。复制代码+你的数据给 Agent 出图。",
+    "source": "figures4papers / ImmunoStruct",
+    "preview": "/static/skill-gallery/f4p_immunostruct_bars_ablation_cancer.png",
+    "chart_type": "comparison_bar",
+    "style": {
+      "hide_xticks": true,
+      "annotate": true,
+      "ylabel": "Score"
+    },
+    "code_url": "/static/skill-gallery/code/f4p_immunostruct_bars_ablation_cancer.py",
+    "code_path": "/home/produ/.codex/skills/nature-figure/assets/figures4papers/figure_ImmunoStruct/plot_bars.py",
+    "has_code": true,
+    "code_name": "plot_bars.py"
+  },
+  {
+    "id": "f4p_immunostruct_bars_ablation_iedb",
+    "skill": "figures4papers",
+    "board": "formal_demo",
+    "short_name": "bars ablation IEDB · ImmunoStruct",
+    "caption": "正式 demo：ImmunoStruct / bars_ablation_IEDB。配套脚本 plot_bars.py。复制代码+你的数据给 Agent 出图。",
+    "source": "figures4papers / ImmunoStruct",
+    "preview": "/static/skill-gallery/f4p_immunostruct_bars_ablation_iedb.png",
+    "chart_type": "comparison_bar",
+    "style": {
+      "hide_xticks": true,
+      "annotate": true,
+      "ylabel": "Score"
+    },
+    "code_url": "/static/skill-gallery/code/f4p_immunostruct_bars_ablation_iedb.py",
+    "code_path": "/home/produ/.codex/skills/nature-figure/assets/figures4papers/figure_ImmunoStruct/plot_bars.py",
+    "has_code": true,
+    "code_name": "plot_bars.py"
+  },
+  {
+    "id": "f4p_immunostruct_bars_comparison_cancer",
+    "skill": "figures4papers",
+    "board": "formal_demo",
+    "short_name": "bars comparison Cancer · ImmunoStruct",
+    "caption": "正式 demo：ImmunoStruct / bars_comparison_Cancer。配套脚本 plot_bars.py。复制代码+你的数据给 Agent 出图。",
+    "source": "figures4papers / ImmunoStruct",
+    "preview": "/static/skill-gallery/f4p_immunostruct_bars_comparison_cancer.png",
+    "chart_type": "comparison_bar",
+    "style": {
+      "hide_xticks": true,
+      "annotate": true,
+      "ylabel": "Score"
+    },
+    "code_url": "/static/skill-gallery/code/f4p_immunostruct_bars_comparison_cancer.py",
+    "code_path": "/home/produ/.codex/skills/nature-figure/assets/figures4papers/figure_ImmunoStruct/plot_bars.py",
+    "has_code": true,
+    "code_name": "plot_bars.py"
+  },
+  {
+    "id": "f4p_immunostruct_bars_comparison_iedb",
+    "skill": "figures4papers",
+    "board": "formal_demo",
+    "short_name": "bars comparison IEDB · ImmunoStruct",
+    "caption": "正式 demo：ImmunoStruct / bars_comparison_IEDB。配套脚本 plot_bars.py。复制代码+你的数据给 Agent 出图。",
+    "source": "figures4papers / ImmunoStruct",
+    "preview": "/static/skill-gallery/f4p_immunostruct_bars_comparison_iedb.png",
+    "chart_type": "comparison_bar",
+    "style": {
+      "hide_xticks": true,
+      "annotate": true,
+      "ylabel": "Score"
+    },
+    "code_url": "/static/skill-gallery/code/f4p_immunostruct_bars_comparison_iedb.py",
+    "code_path": "/home/produ/.codex/skills/nature-figure/assets/figures4papers/figure_ImmunoStruct/plot_bars.py",
+    "has_code": true,
+    "code_name": "plot_bars.py"
+  },
+  {
+    "id": "f4p_rnagenscape_manifold",
+    "skill": "figures4papers",
+    "board": "formal_demo",
+    "short_name": "manifold · RNAGenScape",
+    "caption": "正式 demo：RNAGenScape / manifold。配套脚本 plot_manifold.py。复制代码+你的数据给 Agent 出图。",
+    "source": "figures4papers / RNAGenScape",
+    "preview": "/static/skill-gallery/f4p_rnagenscape_manifold.png",
+    "chart_type": "multi_metric",
+    "style": {
+      "annotate": true
+    },
+    "code_url": "/static/skill-gallery/code/f4p_rnagenscape_manifold.py",
+    "code_path": "/home/produ/.codex/skills/nature-figure/assets/figures4papers/figure_RNAGenScape/plot_manifold.py",
+    "has_code": true,
+    "code_name": "plot_manifold.py"
+  },
+  {
+    "id": "f4p_rnagenscape_manifold_holes",
+    "skill": "figures4papers",
+    "board": "formal_demo",
+    "short_name": "manifold holes · RNAGenScape",
+    "caption": "正式 demo：RNAGenScape / manifold_holes。配套脚本 plot_hole_manifold.py。复制代码+你的数据给 Agent 出图。",
+    "source": "figures4papers / RNAGenScape",
+    "preview": "/static/skill-gallery/f4p_rnagenscape_manifold_holes.png",
+    "chart_type": "multi_metric",
+    "style": {
+      "annotate": true
+    },
+    "code_url": "/static/skill-gallery/code/f4p_rnagenscape_manifold_holes.py",
+    "code_path": "/home/produ/.codex/skills/nature-figure/assets/figures4papers/figure_RNAGenScape/plot_hole_manifold.py",
+    "has_code": true,
+    "code_name": "plot_hole_manifold.py"
+  },
+  {
+    "id": "f4p_rnagenscape_results_comparison_optimization",
+    "skill": "figures4papers",
+    "board": "formal_demo",
+    "short_name": "results comparison optimization · RNAGenScape",
+    "caption": "正式 demo：RNAGenScape / results_comparison_optimization。配套脚本 plot_comparison.py。复制代码+你的数据给 Agent 出图。",
+    "source": "figures4papers / RNAGenScape",
+    "preview": "/static/skill-gallery/f4p_rnagenscape_results_comparison_optimization.png",
+    "chart_type": "comparison_bar",
+    "style": {
+      "hide_xticks": true,
+      "annotate": true,
+      "ylabel": "Score"
+    },
+    "code_url": "/static/skill-gallery/code/f4p_rnagenscape_results_comparison_optimization.py",
+    "code_path": "/home/produ/.codex/skills/nature-figure/assets/figures4papers/figure_RNAGenScape/plot_comparison.py",
+    "has_code": true,
+    "code_name": "plot_comparison.py"
+  },
+  {
+    "id": "f4p_rnagenscape_results_comparison_speed",
+    "skill": "figures4papers",
+    "board": "formal_demo",
+    "short_name": "results comparison speed · RNAGenScape",
+    "caption": "正式 demo：RNAGenScape / results_comparison_speed。配套脚本 plot_comparison.py。复制代码+你的数据给 Agent 出图。",
+    "source": "figures4papers / RNAGenScape",
+    "preview": "/static/skill-gallery/f4p_rnagenscape_results_comparison_speed.png",
+    "chart_type": "comparison_bar",
+    "style": {
+      "hide_xticks": true,
+      "annotate": true,
+      "ylabel": "Score"
+    },
+    "code_url": "/static/skill-gallery/code/f4p_rnagenscape_results_comparison_speed.py",
+    "code_path": "/home/produ/.codex/skills/nature-figure/assets/figures4papers/figure_RNAGenScape/plot_comparison.py",
+    "has_code": true,
+    "code_name": "plot_comparison.py"
+  },
+  {
+    "id": "f4p_rnagenscape_results_sweep",
+    "skill": "figures4papers",
+    "board": "formal_demo",
+    "short_name": "results sweep · RNAGenScape",
+    "caption": "正式 demo：RNAGenScape / results_sweep。配套脚本 plot_sweep.py。复制代码+你的数据给 Agent 出图。",
+    "source": "figures4papers / RNAGenScape",
+    "preview": "/static/skill-gallery/f4p_rnagenscape_results_sweep.png",
+    "chart_type": "heatmap",
+    "style": {
+      "cmap": "Blues"
+    },
+    "code_url": "/static/skill-gallery/code/f4p_rnagenscape_results_sweep.py",
+    "code_path": "/home/produ/.codex/skills/nature-figure/assets/figures4papers/figure_RNAGenScape/plot_sweep.py",
+    "has_code": true,
+    "code_name": "plot_sweep.py"
+  },
+  {
+    "id": "f4p_vigil_comparison_posttraining",
+    "skill": "figures4papers",
+    "board": "formal_demo",
+    "short_name": "comparison posttraining · VIGIL",
+    "caption": "正式 demo：VIGIL / comparison_posttraining。配套脚本 plot_posttraining.py。复制代码+你的数据给 Agent 出图。",
+    "source": "figures4papers / VIGIL",
+    "preview": "/static/skill-gallery/f4p_vigil_comparison_posttraining.png",
+    "chart_type": "line",
+    "style": {
+      "xlabel": "Index",
+      "ylabel": "Value"
+    },
+    "code_url": "/static/skill-gallery/code/f4p_vigil_comparison_posttraining.py",
+    "code_path": "/home/produ/.codex/skills/nature-figure/assets/figures4papers/figure_VIGIL/plot_posttraining.py",
+    "has_code": true,
+    "code_name": "plot_posttraining.py"
+  },
+  {
+    "id": "f4p_vigil_comparison_radar",
+    "skill": "figures4papers",
+    "board": "formal_demo",
+    "short_name": "comparison radar · VIGIL",
+    "caption": "正式 demo：VIGIL / comparison_radar。配套脚本 plot_comparison_radar.py。复制代码+你的数据给 Agent 出图。",
+    "source": "figures4papers / VIGIL",
+    "preview": "/static/skill-gallery/f4p_vigil_comparison_radar.png",
+    "chart_type": "radar",
+    "style": {},
+    "code_url": "/static/skill-gallery/code/f4p_vigil_comparison_radar.py",
+    "code_path": "/home/produ/.codex/skills/nature-figure/assets/figures4papers/figure_VIGIL/plot_comparison_radar.py",
+    "has_code": true,
+    "code_name": "plot_comparison_radar.py"
+  },
+  {
+    "id": "f4p_brainteaser_brute_force",
+    "skill": "figures4papers",
+    "board": "formal_demo",
+    "short_name": "brute force · brainteaser",
+    "caption": "正式 demo：brainteaser / brute_force。配套脚本 plot_brute_force.py。复制代码+你的数据给 Agent 出图。",
+    "source": "figures4papers / brainteaser",
+    "preview": "/static/skill-gallery/f4p_brainteaser_brute_force.png",
+    "chart_type": "grouped_bar",
+    "style": {
+      "annotate": true,
+      "ylabel": "Score"
+    },
+    "code_url": "/static/skill-gallery/code/f4p_brainteaser_brute_force.py",
+    "code_path": "/home/produ/.codex/skills/nature-figure/assets/figures4papers/figure_brainteaser/plot_brute_force.py",
+    "has_code": true,
+    "code_name": "plot_brute_force.py"
+  },
+  {
+    "id": "f4p_brainteaser_correctness_by_category",
+    "skill": "figures4papers",
+    "board": "formal_demo",
+    "short_name": "correctness by category · brainteaser",
+    "caption": "正式 demo：brainteaser / correctness_by_category。配套脚本 plot_correctness_by_category.py。复制代码+你的数据给 Agent 出图。",
+    "source": "figures4papers / brainteaser",
+    "preview": "/static/skill-gallery/f4p_brainteaser_correctness_by_category.png",
+    "chart_type": "grouped_bar",
+    "style": {
+      "annotate": true,
+      "ylabel": "Score"
+    },
+    "code_url": "/static/skill-gallery/code/f4p_brainteaser_correctness_by_category.py",
+    "code_path": "/home/produ/.codex/skills/nature-figure/assets/figures4papers/figure_brainteaser/plot_correctness_by_category.py",
+    "has_code": true,
+    "code_name": "plot_correctness_by_category.py"
+  },
+  {
+    "id": "f4p_brainteaser_correctness_by_subcategory",
+    "skill": "figures4papers",
+    "board": "formal_demo",
+    "short_name": "correctness by subcategory · brainteaser",
+    "caption": "正式 demo：brainteaser / correctness_by_subcategory。配套脚本 plot_correctness_by_subcategory.py。复制代码+你的数据给 Agent 出图。",
+    "source": "figures4papers / brainteaser",
+    "preview": "/static/skill-gallery/f4p_brainteaser_correctness_by_subcategory.png",
+    "chart_type": "grouped_bar",
+    "style": {
+      "annotate": true,
+      "ylabel": "Score"
+    },
+    "code_url": "/static/skill-gallery/code/f4p_brainteaser_correctness_by_subcategory.py",
+    "code_path": "/home/produ/.codex/skills/nature-figure/assets/figures4papers/figure_brainteaser/plot_correctness_by_subcategory.py",
+    "has_code": true,
+    "code_name": "plot_correctness_by_subcategory.py"
+  },
+  {
+    "id": "f4p_brainteaser_rewriting",
+    "skill": "figures4papers",
+    "board": "formal_demo",
+    "short_name": "rewriting · brainteaser",
+    "caption": "正式 demo：brainteaser / rewriting。配套脚本 plot_rewriting.py。复制代码+你的数据给 Agent 出图。",
+    "source": "figures4papers / brainteaser",
+    "preview": "/static/skill-gallery/f4p_brainteaser_rewriting.png",
+    "chart_type": "grouped_bar",
+    "style": {
+      "annotate": true,
+      "ylabel": "Score"
+    },
+    "code_url": "/static/skill-gallery/code/f4p_brainteaser_rewriting.py",
+    "code_path": "/home/produ/.codex/skills/nature-figure/assets/figures4papers/figure_brainteaser/plot_rewriting.py",
+    "has_code": true,
+    "code_name": "plot_rewriting.py"
+  },
+  {
+    "id": "f4p_brainteaser_selfcorrection_math",
+    "skill": "figures4papers",
+    "board": "formal_demo",
+    "short_name": "selfcorrection math · brainteaser",
+    "caption": "正式 demo：brainteaser / selfcorrection_math。配套脚本 plot_selfcorrection_math.py。复制代码+你的数据给 Agent 出图。",
+    "source": "figures4papers / brainteaser",
+    "preview": "/static/skill-gallery/f4p_brainteaser_selfcorrection_math.png",
+    "chart_type": "grouped_bar",
+    "style": {
+      "annotate": true,
+      "ylabel": "Score"
+    },
+    "code_url": "/static/skill-gallery/code/f4p_brainteaser_selfcorrection_math.py",
+    "code_path": "/home/produ/.codex/skills/nature-figure/assets/figures4papers/figure_brainteaser/plot_selfcorrection_math.py",
+    "has_code": true,
+    "code_name": "plot_selfcorrection_math.py"
+  },
+  {
+    "id": "f4p_ophthal_review_composition_heatmap",
+    "skill": "figures4papers",
+    "board": "formal_demo",
+    "short_name": "composition heatmap · ophthal_review",
+    "caption": "正式 demo：ophthal_review / composition_heatmap。配套脚本 plot_composition.py。复制代码+你的数据给 Agent 出图。",
+    "source": "figures4papers / ophthal_review",
+    "preview": "/static/skill-gallery/f4p_ophthal_review_composition_heatmap.png",
+    "chart_type": "heatmap",
+    "style": {
+      "cmap": "Blues"
+    },
+    "code_url": "/static/skill-gallery/code/f4p_ophthal_review_composition_heatmap.py",
+    "code_path": "/home/produ/.codex/skills/nature-figure/assets/figures4papers/figure_ophthal_review/plot_composition.py",
+    "has_code": true,
+    "code_name": "plot_composition.py"
+  },
+  {
+    "id": "f4p_ophthal_review_trend_by_month",
+    "skill": "figures4papers",
+    "board": "formal_demo",
+    "short_name": "trend by month · ophthal_review",
+    "caption": "正式 demo：ophthal_review / trend_by_month。配套脚本 plot_trend.py。复制代码+你的数据给 Agent 出图。",
+    "source": "figures4papers / ophthal_review",
+    "preview": "/static/skill-gallery/f4p_ophthal_review_trend_by_month.png",
+    "chart_type": "line",
+    "style": {
+      "xlabel": "Index",
+      "ylabel": "Value"
+    },
+    "code_url": "/static/skill-gallery/code/f4p_ophthal_review_trend_by_month.py",
+    "code_path": "/home/produ/.codex/skills/nature-figure/assets/figures4papers/figure_ophthal_review/plot_trend.py",
+    "has_code": true,
+    "code_name": "plot_trend.py"
+  },
+  {
+    "id": "atlas_atlas_01_bar_charts",
+    "skill": "nature-figure",
+    "board": "chart_family",
+    "short_name": "图鉴 · 柱图家族",
+    "caption": "chart-atlas 柱图族视觉参考（无单文件 plot 脚本）。",
+    "source": "nature-figure / chart-atlas",
+    "preview": "/static/skill-gallery/atlas_atlas_01_bar_charts.png",
+    "chart_type": "comparison_bar",
+    "style": {
+      "hide_xticks": true,
+      "annotate": true,
+      "ylabel": "Score"
+    },
+    "code_url": "",
+    "code_path": "",
+    "has_code": false,
+    "code_name": ""
+  },
+  {
+    "id": "atlas_atlas_02_line_trends",
+    "skill": "nature-figure",
+    "board": "chart_family",
+    "short_name": "图鉴 · 折线趋势",
+    "caption": "chart-atlas 趋势线族参考。",
+    "source": "nature-figure / chart-atlas",
+    "preview": "/static/skill-gallery/atlas_atlas_02_line_trends.png",
+    "chart_type": "line",
+    "style": {
+      "xlabel": "Index",
+      "ylabel": "Value"
+    },
+    "code_url": "",
+    "code_path": "",
+    "has_code": false,
+    "code_name": ""
+  },
+  {
+    "id": "atlas_atlas_03_heatmaps",
+    "skill": "nature-figure",
+    "board": "chart_family",
+    "short_name": "图鉴 · 热力图",
+    "caption": "chart-atlas 热力/矩阵族参考。",
+    "source": "nature-figure / chart-atlas",
+    "preview": "/static/skill-gallery/atlas_atlas_03_heatmaps.png",
+    "chart_type": "heatmap",
+    "style": {
+      "cmap": "Blues"
+    },
+    "code_url": "",
+    "code_path": "",
+    "has_code": false,
+    "code_name": ""
+  },
+  {
+    "id": "atlas_atlas_04_scatter_bubble",
+    "skill": "nature-figure",
+    "board": "chart_family",
+    "short_name": "图鉴 · 散点气泡",
+    "caption": "chart-atlas 散点/气泡族参考。",
+    "source": "nature-figure / chart-atlas",
+    "preview": "/static/skill-gallery/atlas_atlas_04_scatter_bubble.png",
+    "chart_type": "multi_metric",
+    "style": {
+      "annotate": true
+    },
+    "code_url": "",
+    "code_path": "",
+    "has_code": false,
+    "code_name": ""
+  },
+  {
+    "id": "atlas_atlas_05_radar_polar",
+    "skill": "nature-figure",
+    "board": "chart_family",
+    "short_name": "图鉴 · 雷达极坐标",
+    "caption": "chart-atlas 雷达/极坐标族参考。",
+    "source": "nature-figure / chart-atlas",
+    "preview": "/static/skill-gallery/atlas_atlas_05_radar_polar.png",
+    "chart_type": "radar",
+    "style": {},
+    "code_url": "",
+    "code_path": "",
+    "has_code": false,
+    "code_name": ""
+  },
+  {
+    "id": "atlas_atlas_06_distributions",
+    "skill": "nature-figure",
+    "board": "chart_family",
+    "short_name": "图鉴 · 分布",
+    "caption": "chart-atlas 分布图族参考。",
+    "source": "nature-figure / chart-atlas",
+    "preview": "/static/skill-gallery/atlas_atlas_06_distributions.png",
+    "chart_type": "multi_metric",
+    "style": {
+      "annotate": true
+    },
+    "code_url": "",
+    "code_path": "",
+    "has_code": false,
+    "code_name": ""
+  },
+  {
+    "id": "atlas_atlas_07_forest_interval",
+    "skill": "nature-figure",
+    "board": "chart_family",
+    "short_name": "图鉴 · 森林/区间",
+    "caption": "chart-atlas 效应量/区间族参考。",
+    "source": "nature-figure / chart-atlas",
+    "preview": "/static/skill-gallery/atlas_atlas_07_forest_interval.png",
+    "chart_type": "multi_metric",
+    "style": {
+      "annotate": true
+    },
+    "code_url": "",
+    "code_path": "",
+    "has_code": false,
+    "code_name": ""
+  },
+  {
+    "id": "atlas_atlas_08_area_stacked",
+    "skill": "nature-figure",
+    "board": "chart_family",
+    "short_name": "图鉴 · 堆叠面积",
+    "caption": "chart-atlas 面积/堆叠族参考。",
+    "source": "nature-figure / chart-atlas",
+    "preview": "/static/skill-gallery/atlas_atlas_08_area_stacked.png",
+    "chart_type": "line",
+    "style": {
+      "xlabel": "Index",
+      "ylabel": "Value"
+    },
+    "code_url": "",
+    "code_path": "",
+    "has_code": false,
+    "code_name": ""
+  },
+  {
+    "id": "atlas_atlas_09_image_plates",
+    "skill": "nature-figure",
+    "board": "chart_family",
+    "short_name": "图鉴 · 图像拼版",
+    "caption": "chart-atlas 影像板参考。",
+    "source": "nature-figure / chart-atlas",
+    "preview": "/static/skill-gallery/atlas_atlas_09_image_plates.png",
+    "chart_type": "multi_metric",
+    "style": {
+      "annotate": true
+    },
+    "code_url": "",
+    "code_path": "",
+    "has_code": false,
+    "code_name": ""
+  },
+  {
+    "id": "atlas_atlas_10_network_matrix",
+    "skill": "nature-figure",
+    "board": "chart_family",
+    "short_name": "图鉴 · 网络矩阵",
+    "caption": "chart-atlas 网络/矩阵族参考。",
+    "source": "nature-figure / chart-atlas",
+    "preview": "/static/skill-gallery/atlas_atlas_10_network_matrix.png",
+    "chart_type": "heatmap",
+    "style": {
+      "cmap": "Blues"
+    },
+    "code_url": "",
+    "code_path": "",
+    "has_code": false,
+    "code_name": ""
+  },
+  {
+    "id": "nat_fig1_material_mechanism_rich",
+    "skill": "nature-figure",
+    "board": "chart_family",
+    "short_name": "Gallery · fig1 material mechanism rich",
+    "caption": "nature-figure gallery 投稿多面板图例（图族/版式参考，无配套 plot 脚本）。",
+    "source": "nature-figure / gallery",
+    "preview": "/static/skill-gallery/nat_fig1_material_mechanism_rich.png",
+    "chart_type": "multi_metric",
+    "style": {
+      "annotate": true
+    },
+    "code_url": "",
+    "code_path": "",
+    "has_code": false,
+    "code_name": ""
+  },
+  {
+    "id": "nat_fig2_spatial_imaging_rich",
+    "skill": "nature-figure",
+    "board": "chart_family",
+    "short_name": "Gallery · fig2 spatial imaging rich",
+    "caption": "nature-figure gallery 投稿多面板图例（图族/版式参考，无配套 plot 脚本）。",
+    "source": "nature-figure / gallery",
+    "preview": "/static/skill-gallery/nat_fig2_spatial_imaging_rich.png",
+    "chart_type": "multi_metric",
+    "style": {
+      "annotate": true
+    },
+    "code_url": "",
+    "code_path": "",
+    "has_code": false,
+    "code_name": ""
+  },
+  {
+    "id": "nat_fig3_in_vivo_efficacy_rich",
+    "skill": "nature-figure",
+    "board": "chart_family",
+    "short_name": "Gallery · fig3 in vivo efficacy rich",
+    "caption": "nature-figure gallery 投稿多面板图例（图族/版式参考，无配套 plot 脚本）。",
+    "source": "nature-figure / gallery",
+    "preview": "/static/skill-gallery/nat_fig3_in_vivo_efficacy_rich.png",
+    "chart_type": "multi_metric",
+    "style": {
+      "annotate": true
+    },
+    "code_url": "",
+    "code_path": "",
+    "has_code": false,
+    "code_name": ""
+  },
+  {
+    "id": "nat_fig4_single_cell_systems_rich",
+    "skill": "nature-figure",
+    "board": "chart_family",
+    "short_name": "Gallery · fig4 single cell systems rich",
+    "caption": "nature-figure gallery 投稿多面板图例（图族/版式参考，无配套 plot 脚本）。",
+    "source": "nature-figure / gallery",
+    "preview": "/static/skill-gallery/nat_fig4_single_cell_systems_rich.png",
+    "chart_type": "multi_metric",
+    "style": {
+      "annotate": true
+    },
+    "code_url": "",
+    "code_path": "",
+    "has_code": false,
+    "code_name": ""
+  },
+  {
+    "id": "nat_fig5_validation_perturbation_rich",
+    "skill": "nature-figure",
+    "board": "chart_family",
+    "short_name": "Gallery · fig5 validation perturbation rich",
+    "caption": "nature-figure gallery 投稿多面板图例（图族/版式参考，无配套 plot 脚本）。",
+    "source": "nature-figure / gallery",
+    "preview": "/static/skill-gallery/nat_fig5_validation_perturbation_rich.png",
+    "chart_type": "multi_metric",
+    "style": {
+      "annotate": true
+    },
+    "code_url": "",
+    "code_path": "",
+    "has_code": false,
+    "code_name": ""
+  },
+  {
+    "id": "f4p_asset_dispersion_motivation",
+    "skill": "figures4papers",
+    "board": "chart_family",
+    "short_name": "Dispersion motivation · asset",
+    "caption": "figures4papers/assets 示意或结果拼版（无独立 plot 脚本，仅视觉参考）。",
+    "source": "figures4papers / assets",
+    "preview": "/static/skill-gallery/f4p_asset_dispersion_motivation.png",
+    "chart_type": "multi_metric",
+    "style": {},
+    "code_url": "",
+    "code_path": "",
+    "has_code": false,
+    "code_name": ""
+  },
+  {
+    "id": "f4p_asset_dispersion_observation",
+    "skill": "figures4papers",
+    "board": "chart_family",
+    "short_name": "Dispersion observation · asset",
+    "caption": "figures4papers/assets 示意或结果拼版（无独立 plot 脚本，仅视觉参考）。",
+    "source": "figures4papers / assets",
+    "preview": "/static/skill-gallery/f4p_asset_dispersion_observation.png",
+    "chart_type": "multi_metric",
+    "style": {},
+    "code_url": "",
+    "code_path": "",
+    "has_code": false,
+    "code_name": ""
+  },
+  {
+    "id": "f4p_asset_dispersion_observation_distillation",
+    "skill": "figures4papers",
+    "board": "chart_family",
+    "short_name": "Dispersion observation distillation · asset",
+    "caption": "figures4papers/assets 示意或结果拼版（无独立 plot 脚本，仅视觉参考）。",
+    "source": "figures4papers / assets",
+    "preview": "/static/skill-gallery/f4p_asset_dispersion_observation_distillation.png",
+    "chart_type": "multi_metric",
+    "style": {},
+    "code_url": "",
+    "code_path": "",
+    "has_code": false,
+    "code_name": ""
+  },
+  {
+    "id": "f4p_asset_immunostruct_contrastive",
+    "skill": "figures4papers",
+    "board": "chart_family",
+    "short_name": "ImmunoStruct contrastive · asset",
+    "caption": "figures4papers/assets 示意或结果拼版（无独立 plot 脚本，仅视觉参考）。",
+    "source": "figures4papers / assets",
+    "preview": "/static/skill-gallery/f4p_asset_immunostruct_contrastive.png",
+    "chart_type": "multi_metric",
+    "style": {},
+    "code_url": "",
+    "code_path": "",
+    "has_code": false,
+    "code_name": ""
+  },
+  {
+    "id": "f4p_asset_immunostruct_results_cedar",
+    "skill": "figures4papers",
+    "board": "chart_family",
+    "short_name": "ImmunoStruct results CEDAR · asset",
+    "caption": "figures4papers/assets 示意或结果拼版（无独立 plot 脚本，仅视觉参考）。",
+    "source": "figures4papers / assets",
+    "preview": "/static/skill-gallery/f4p_asset_immunostruct_results_cedar.png",
+    "chart_type": "multi_metric",
+    "style": {},
+    "code_url": "",
+    "code_path": "",
+    "has_code": false,
+    "code_name": ""
+  },
+  {
+    "id": "f4p_asset_immunostruct_results_iedb",
+    "skill": "figures4papers",
+    "board": "chart_family",
+    "short_name": "ImmunoStruct results IEDB · asset",
+    "caption": "figures4papers/assets 示意或结果拼版（无独立 plot 脚本，仅视觉参考）。",
+    "source": "figures4papers / assets",
+    "preview": "/static/skill-gallery/f4p_asset_immunostruct_results_iedb.png",
+    "chart_type": "multi_metric",
+    "style": {},
+    "code_url": "",
+    "code_path": "",
+    "has_code": false,
+    "code_name": ""
+  },
+  {
+    "id": "f4p_asset_immunostruct_schematic",
+    "skill": "figures4papers",
+    "board": "chart_family",
+    "short_name": "ImmunoStruct schematic · asset",
+    "caption": "figures4papers/assets 示意或结果拼版（无独立 plot 脚本，仅视觉参考）。",
+    "source": "figures4papers / assets",
+    "preview": "/static/skill-gallery/f4p_asset_immunostruct_schematic.png",
+    "chart_type": "multi_metric",
+    "style": {},
+    "code_url": "",
+    "code_path": "",
+    "has_code": false,
+    "code_name": ""
+  },
+  {
+    "id": "f4p_asset_rnagenscape_schematic",
+    "skill": "figures4papers",
+    "board": "chart_family",
+    "short_name": "RNAGenScape schematic · asset",
+    "caption": "figures4papers/assets 示意或结果拼版（无独立 plot 脚本，仅视觉参考）。",
+    "source": "figures4papers / assets",
+    "preview": "/static/skill-gallery/f4p_asset_rnagenscape_schematic.png",
+    "chart_type": "multi_metric",
+    "style": {},
+    "code_url": "",
+    "code_path": "",
+    "has_code": false,
+    "code_name": ""
+  }
+]

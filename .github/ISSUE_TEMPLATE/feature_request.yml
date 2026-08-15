@@ -1,0 +1,29 @@
+name: 功能建议
+description: 提议新的科研工作流或体验改进
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: scenario
+    attributes:
+      label: 科研场景
+      description: 这个需求发生在读文献、做项目、跑实验还是其他环节？
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 当前问题
+      description: 现有流程为什么不够用？
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建议方案
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 可接受的替代方案

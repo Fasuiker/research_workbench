@@ -1,0 +1,35 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+.env.*
+*.log
+
+# local personal data — never publish
+data/*
+!data/.gitkeep
+exports/*
+!exports/.gitkeep
+papers/**
+!papers/.gitkeep
+*.zip
+*.db
+*.db-*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+refs/
+start.txt
+.workbench-profile.json
+.workbench-spaces/
+.license-server/
+license.dat
+.build-venv/
+build/
+dist/
+release/

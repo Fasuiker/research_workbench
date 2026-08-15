@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>科研工作台</title>
+  <script>
+    try {
+      var t = localStorage.getItem("wb_theme");
+      if (t === "dark" || t === "light" || t === "pine" || t === "mist" || t === "bamboo" || t === "sky" || t === "amber") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  </script>
+  <style>
+    html, body { margin: 0; min-height: 100%; background: #e9efed; }
+    .boot-splash {
+      position: fixed; inset: 0; z-index: 100000; display: grid; place-items: center;
+      background: radial-gradient(circle at 50% 42%, #f8fbfa 0, #eef3f1 48%, #e4ece9 100%);
+      color: #24413b; font-family: "Microsoft YaHei UI", "Noto Sans SC", sans-serif;
+      opacity: 1; visibility: visible; transition: opacity .22s ease, visibility .22s ease;
+    }
+    .boot-splash.is-done { opacity: 0; visibility: hidden; pointer-events: none; }
+    .boot-splash-card { display: flex; flex-direction: column; align-items: center; gap: 13px; transform: translateY(-2vh); }
+    .boot-splash-mark {
+      width: 54px; height: 54px; display: grid; place-items: center; border-radius: 17px;
+      color: #fff; background: linear-gradient(145deg, #47796f, #294f48);
+      box-shadow: 0 12px 30px rgba(36, 74, 66, .20); font-size: 25px; font-weight: 700;
+    }
+    .boot-splash-name { font-size: 18px; font-weight: 650; letter-spacing: .08em; }
+    .boot-splash-status { color: #758983; font-size: 12px; letter-spacing: .04em; }
+    .boot-splash-dots { display: flex; gap: 5px; height: 8px; align-items: center; }
+    .boot-splash-dots i { width: 5px; height: 5px; border-radius: 50%; background: #5d8179; animation: bootPulse 1.15s ease-in-out infinite; }
+    .boot-splash-dots i:nth-child(2) { animation-delay: .14s; }
+    .boot-splash-dots i:nth-child(3) { animation-delay: .28s; }
+    @keyframes bootPulse { 0%, 70%, 100% { opacity: .28; transform: translateY(0); } 35% { opacity: 1; transform: translateY(-3px); } }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.18.0/dist/katex.min.css" integrity="sha384-KfwFj/Q/jGrY4ijtfzWyW5NXzT5irvfnTq6aRnH2xPvLzLdi1XyVr7w4l2uwTq0V" crossorigin="anonymous" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="/static/css/app.css?v=2.08" />
+</head>
+<body>
+  <div id="bootSplash" class="boot-splash" role="status" aria-live="polite">
+    <div class="boot-splash-card">
+      <div class="boot-splash-mark">研</div>
+      <div class="boot-splash-name">科研工作台</div>
+      <div class="boot-splash-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="boot-splash-status">正在整理工作空间</div>
+    </div>
+  </div>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">学</div>
+        <div>
+          <div class="brand-name" id="brandName">科研工作台</div>
+          <div class="brand-sub" id="brandSub">Research Workspace</div>
+        </div>
+      </div>
+      <nav id="nav" class="nav"></nav>
+      <div class="sidebar-foot">
+        <div id="statusPill" class="status-pill">在岗</div>
+        <div class="meta" style="text-align:center">本地 · v1.16.0</div>
+      </div>
+    </aside>
+    <div class="workspace">
+      <header class="app-top">
+        <div class="search-wrap">
+          <input id="globalSearch" class="global-search" placeholder="搜索全部 · Ctrl+K" />
+          <div id="searchDrop" class="search-drop hidden"></div>
+        </div>
+        <div id="quickLinks" class="quick-links"></div>
+        <div class="top-right">
+          <button type="button" class="btn ghost small theme-toggle" id="btnTheme" title="切换主题" aria-label="切换主题">
+            <span class="theme-toggle-ico" aria-hidden="true"></span>
+            <span class="theme-toggle-label">主题</span>
+          </button>
+          <button class="btn ghost small" id="btnCapture">快速捕获</button>
+          <button class="btn secondary small" id="btnExport">导出</button>
+        </div>
+      </header>
+      <main class="main">
+        <header class="topbar">
+          <div>
+            <h1 id="pageTitle">今日</h1>
+            <p id="pageDesc" class="muted">今日焦点与习惯节奏</p>
+          </div>
+          <div class="top-actions" id="topActions"></div>
+        </header>
+        <section id="view" class="view"></section>
+      </main>
+    </div>
+  </div>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-backdrop" data-close="1"></div>
+    <div class="modal-card" id="modalCard"></div>
+  </div>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <div id="aiJobDock" class="ai-job-dock hidden" aria-live="polite"></div>
+
+  <button type="button" id="agentFab" class="agent-fab" title="打开 Scier" aria-label="打开 Scier" aria-controls="agentPanel" aria-expanded="false">Scier</button>
+  <div id="agentPanel" class="agent-panel hidden" aria-hidden="true">
+    <div class="agent-panel-head">
+      <div class="agent-panel-identity">
+        <strong id="agentTitle">Scier</strong>
+        <span class="agent-context-badge" id="agentContextBadge">通用对话</span>
+      </div>
+      <div class="agent-head-actions">
+        <button type="button" class="agent-head-btn agent-head-history" id="agentHistory" aria-label="查看历史对话" title="历史对话"><span class="agent-history-clock" aria-hidden="true"></span></button>
+        <button type="button" class="agent-head-btn agent-head-new" id="agentNew" aria-label="新建对话" title="新建对话">＋</button>
+      </div>
+      <span class="meta" id="agentModelHint">设置 · LLM</span>
+      <button type="button" class="agent-close" id="agentClose" aria-label="关闭 Scier 对话" title="关闭">×</button>
+    </div>
+    <div class="agent-mode-bar hidden" id="agentFigureTools">
+      <span class="agent-mode-label">绘图后端</span>
+      <span class="agent-backend-wrap" id="agentBackendWrap">
+        <button type="button" class="agent-mode-btn" data-agent-be="python">Python</button>
+        <button type="button" class="agent-mode-btn" data-agent-be="r">R</button>
+      </span>
+      <span class="meta agent-mode-note">实验页自动启用投稿级绘图流程</span>
+    </div>
+    <div class="agent-history-drawer hidden" id="agentHistoryDrawer" aria-hidden="true">
+      <div class="agent-history-head">
+        <div><strong>历史对话</strong><div class="meta" id="agentHistoryCount">保存在科研工作台中</div></div>
+        <button type="button" class="agent-close" id="agentHistoryClose" aria-label="关闭历史对话">×</button>
+      </div>
+      <div class="agent-history-list" id="agentHistoryList"><div class="empty">正在加载…</div></div>
+    </div>
+    <div class="agent-panel-body" id="agentMessages"></div>
+    <div class="agent-context-picker hidden" id="agentContextPicker" aria-hidden="true">
+      <div class="agent-context-picker-head">
+        <div><strong>选择工作台上下文</strong><div class="meta" id="agentContextPickerHint">当前页面相关内容优先</div></div>
+        <button type="button" class="agent-close" id="agentContextClose" aria-label="关闭上下文选择">×</button>
+      </div>
+      <input type="search" id="agentContextSearch" placeholder="搜索项目、笔记、文献、任务……" autocomplete="off" />
+      <div class="agent-context-filters" id="agentContextFilters"></div>
+      <div class="agent-context-types" id="agentContextTypes"></div>
+      <div class="agent-context-list" id="agentContextList"><div class="empty">正在加载…</div></div>
+      <div class="agent-context-picker-foot"><span class="meta" id="agentContextCount">已选择 0/12</span><button type="button" class="btn small" id="agentContextDone">完成</button></div>
+    </div>
+    <div class="agent-panel-foot">
+      <div class="agent-panel-contexts" id="agentContexts"></div>
+      <div class="agent-panel-files" id="agentFiles"></div>
+      <textarea id="agentInput" rows="1" placeholder="给 Scier 发送消息"></textarea>
+      <div class="agent-composer-actions">
+        <div class="agent-composer-left">
+          <input type="file" id="agentFileInput" multiple hidden accept=".pdf,.txt,.md,.csv,.json,.py,.js,.ts,.tsx,.jsx,.css,.html,.xml,.yaml,.yml,.tex,.bib,.log,.sql" />
+          <button type="button" class="agent-icon-btn" id="agentAddFile" aria-label="添加文件" title="添加 PDF、文本、代码或数据文件">＋</button>
+          <button type="button" class="agent-context-trigger" id="agentAddContext" title="选择工作台中的项目、笔记、文献等作为上下文">上下文</button>
+          <span class="meta" id="agentAttachHint">文件或工作台记录</span>
+        </div>
+        <div class="agent-composer-right">
+          <button type="button" class="btn ghost small" id="agentClear" title="保留当前历史并新建对话">新对话</button>
+          <button type="button" class="agent-send-btn" id="agentSend" aria-label="发送消息" title="发送（Enter）">↑</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="focusBar" class="focus-float hidden" aria-live="polite">
+    <button type="button" class="focus-float-main" id="focusBarOpen" title="专注">
+      <span class="focus-dot"></span>
+      <span class="focus-float-text">
+        <span id="focusBarTitle" class="focus-float-title">专注中</span>
+        <span id="focusBarTimer" class="focus-timer">25:00</span>
+      </span>
+    </button>
+    <button type="button" class="focus-float-stop" id="focusBarStop" title="结束专注">结束</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.18.0/dist/katex.min.js" integrity="sha384-OE4SMRr5gMJQzKSD08J46vKsKgY8NxVtO1LW+/q3NJ0WHsGsdN4oebgEjwwWuyvG" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.18.0/dist/contrib/auto-render.min.js" integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz" crossorigin="anonymous"></script>
+  <script src="/static/js/api.js?v=1.84"></script>
+  <script src="/static/js/reader.js?v=1.84"></script>
+  <script src="/static/js/app.js?v=2.30"></script>
+</body>
+</html>
